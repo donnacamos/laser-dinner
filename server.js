@@ -50,7 +50,7 @@ app.post('/feel', upload.any(), function(req, res) {
         res.send(fileMetadata);
         
     } else {
-        res.send({ 'error' : "No files submitted for feelin! You're really messing with my zen thing, man."})
+        res.send({ 'error' : "No files submitted. Submitting a file is required."})
     }
 });
 
